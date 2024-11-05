@@ -1,0 +1,31 @@
+Prompt:
+Project Overview: CI/CD Pipeline on AWS
+
+    Objective: Create a simple, automated pipeline to deploy a web application to AWS. Learn the basics of using AWS services like CodeCommit, CodeBuild, and CodeDeploy, as well as practice with EC2 or Lambda.
+
+    Skills Practiced:
+        CI/CD setup and automation
+        Infrastructure as Code (IaC) with tools like AWS CloudFormation or Terraform
+        Basic AWS service management and configuration
+
+    Steps:
+
+        Create a Web Application: Start with a simple "Hello World" web app in Node.js or Python. Host it in a GitHub repository (or use AWS CodeCommit if you want to stay fully within AWS).
+
+        Set Up an S3 Bucket for Artifacts (Optional): If you need a place to store build artifacts (e.g., zipped versions of the app), you can use an S3 bucket.
+
+        Build the CI/CD Pipeline:
+            AWS CodePipeline: Set up a pipeline that connects your code repository to the deployment process.
+            AWS CodeBuild: Create a build stage that installs dependencies, runs tests, and packages the application. CodeBuild can be configured with a simple buildspec.yml file that defines build commands.
+            AWS CodeDeploy: Configure CodeDeploy to deploy your app to either EC2 instances or Lambda functions.
+
+        Launch an EC2 Instance (or Lambda Function): If you choose EC2, create a basic instance where CodeDeploy will deploy your app. Alternatively, you could use a Lambda function if you want a serverless deployment.
+
+        Automate Infrastructure with IaC (optional): Use AWS CloudFormation or Terraform to script your resources. This helps you automate provisioning and deployment from scratch and get experience with Infrastructure as Code.
+
+        Testing & Monitoring:
+            Ensure that changes in your repository automatically trigger the pipeline.
+            Test the application after each deployment and try to introduce changes to see how the pipeline adapts.
+            Use AWS CloudWatch for basic monitoring of your deployment status.
+
+    Project Wrap-Up: Document the entire process and reflect on any troubleshooting steps you had to take. This could be helpful if you’d like to showcase this project in your portfolio or discuss it in an interview.
